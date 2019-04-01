@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('./images/notes.jpg');
+    display: flex;
+    justify-content: center;
+}
+
+#allButton{
+    width: 70%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.piano-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    width: 100px;
+    height: 420px;
+    background: black;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 1000;
+    font-size: 60px;
+}
+
+.piano-button.active, .piano-button:active {
+    transform: scale(1.1);
+    border:5px solid black;
+    background:var(--background-button__active);
+    transition: 0.5s;
+}
+
+
